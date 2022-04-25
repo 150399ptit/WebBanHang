@@ -7,8 +7,7 @@ export const register = createAsyncThunk(
     'users/register',
     async (payload) => {
         //call api to register
-        const data ={}
-        return data;
+        return 1;
     }
 )
 
@@ -17,13 +16,13 @@ export const login = createAsyncThunk(
     'users/login',
     // async (payload) => {
     //     try {
-    //         const response = await authApi.login(payload);
+    //         const response = await userApi.login(payload);
     //         localStorage.setItem(StorageKeys.access, response.data.access);
     //         localStorage.setItem(StorageKeys.refresh, response.data.refresh);
     //         const username = JSON.parse(response.config.data).username
-    //         const responseUser = await authApi.getUser({ username: username })
+    //         const responseUser = await userApi.getUser({ username: username })
     //         const user = {...responseUser.data[0]}
-    //         const responseProfile = await authApi.getProfile({user: user.id})
+    //         const responseProfile = await userApi.getProfile({user: user.id})
     //         const profile = {...responseProfile.data}
     //         const data = {
     //             ...user,
